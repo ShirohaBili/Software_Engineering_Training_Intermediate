@@ -37,7 +37,7 @@ public class DancingBug extends Bug
         arr = new int[n];
 
         for (int i=0;i<n;i++){
-            arr[i] = a[i];
+            arr[i] = a[i];  //传入的参数
         }
         index = 0;
     }
@@ -48,7 +48,7 @@ public class DancingBug extends Bug
     public void act()
     {
         index = index % arr.length;
-        setDirection(getDirection()+arr[index]*45);
+        setDirection(getDirection()+arr[index]*45);  //每次设置方向为arr[i]*45
         index++;
         if (canMove())  move();
     }

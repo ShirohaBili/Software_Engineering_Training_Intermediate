@@ -52,7 +52,7 @@ public class ZBug extends Bug
         else
         {
             if (turn == 0){
-                setDirection(225)
+                setDirection(225);
             }
             else if (turn == 1){
                 setDirection(90);
